@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BugManager List</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+	<h1>BugManager List</h1><br>
+	<form name="BugListForm" action="#">
+		<div class="row">
+			<div class="col col-25">
+				<label for="title">Titel: </label>
+				<input type="text" name="title" id="title">
+				<label for="processors">Assign to: </label>
+				<select name="processors" id="processors" size="5" multiple>
+				</select>
+			</div>
+			<div class="col col-50">
+				<label for="description">Description:</label>
+				<textarea name="description" id="description" rows="9"></textarea>
+			</div>
+			<div class="col col-25">
+				<label for="dependency">Dependency: </label>
+				<select name="dependency" size="1"
+				        id="dependency">
+					<option value="independent">Independent BugManager</option>
+				</select>
+			</div>
+		</div>
+		<div class="alignRight">
+			<input type="button" id="add" value="Add">
+		</div>
+	</form>
+	
+	<!--Filter Buttons-->
+	<div id="btnFields">
+		<button type="button" id="showAll">Show all</button>
+		<button type="button" id="showOpen">Show open</button>
+	</div>
+	
+	<div id="bugEntries">
+		<!-- Bugs added by user-->
+	</div>
+</div>
+
+<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/bugManager.js"></script>
+</body>
+</html>

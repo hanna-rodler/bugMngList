@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+body{
+   display: flex;
+   justify-content: center;
+   font-family: Verdana, sans-serif;
+   font-size: 1em;
+}
+
+h1 {
+   text-align: center;
+   color: #c94c4c;
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+   flex-flow: column wrap;
+   width: 70%;
+}
+
+.col{
+   display: flex;
+   flex-direction: column;
+   margin: 2%;
+}
+
+.col{
+   display: flex;
+   flex-direction: column;
+}
+
+.col-25{
+   width: 25%;
+}
+
+.col-50{
+   width: 50%;
+}
+
+.row{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+
+.row-50{
+   width: 50%;
+   justify-content: space-evenly;
+}
+
+.col-80{
+   width: 80%;
+}
+
+.col-20{
+   width: 20%;
+}
+
+label{
+   margin-bottom: 0.3em;
+}
+
+label[for="processor"]{
+   margin-top: 1em;
+}
+
+.alignRight{
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+}
+
+form{
+   margin-bottom: 4em;
+}
+
+#btnFields{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   border-top: 1px solid black;
+   width: 100%;
+   background-color: #b1cbbb;
+   justify-content: flex-start;
+}
+
+#btnFields button, #btnFields select, #add {
+   margin: 0.5em;
+   padding: 0.5em;
+   border: 1px solid #232925;
+   border-radius: 7px;
+}
+
+input[value='delete']{
+   border: 1px solid #232925;
+   border-radius: 7px;
+}
+
+#btnFields button:hover, #btnFields select:hover, #add:hover, input[value='delete']:hover {
+   box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.20), 0 7px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+#btnFields button:focus, #btnFields select:focus, #add:focus, input[value='delete']:focus{
+   background-color: #232925;
+   color: white;
+}
+
+button, select, input[value='delete'] {
+   font-weight: bold;
+}
+
+.bugName{
+   font-weight: bold;
+   margin-left: 0.2em;
+}
+
+span{
+   font-style: italic;
+}
+
+.bugEntry > div{
+   padding-bottom: 0.3em;
+}
+
+.alignWithCB{
+   margin-left: 3px;
+}
+
+.closed {
+   color: darkgrey;
+}
+
+.closed input {
+   border-color: darkgrey;
+}
+
+.hide {
+   display: none;
+}
+
+.childBug {
+   margin-left: 1.7em;
+}
